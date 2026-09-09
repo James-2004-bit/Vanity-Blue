@@ -1059,3 +1059,11 @@ body,
   color: #f2f2f2;
   text-decoration: none;
 }
+
+.resident-row,
+.resident-row:visited,
+.resident-row:hover,
+.resident-row:active {
+  color: #f2f2f2;
+  text-decoration: none;
+}
