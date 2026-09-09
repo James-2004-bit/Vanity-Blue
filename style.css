@@ -769,39 +769,111 @@ a.resident-row:hover {
     font-size: 2rem;
   }
 
+/* ==================================================
+   RESIDENT PROFILE
+   ================================================== */
 
-  /* Resident profile */
+.resident-profile {
+  min-height: 100vh;
 
-  .resident-profile {
-    padding: 40px 16px;
-  }
+  padding: 48px 32px;
 
-  .resident-hero {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  background: var(--black);
+  color: var(--white);
+}
 
-    min-height: auto;
-  }
 
-  .resident-profile h1 {
-    font-size: 4rem;
-  }
+/* MAIN TWO-COLUMN LAYOUT */
+
+.resident-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  width: 100%;
+
+  align-items: start;
+}
+
+
+/* LEFT SIDE */
+
+.resident-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.resident-number {
+  margin: 0 0 20px 0;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+.resident-profile h1 {
+  margin: 0;
+
+  font-size: clamp(5rem, 12vw, 12rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+
+.resident-location {
+  margin: 30px 0 0 0;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+/* BIOGRAPHY */
+
+.resident-about {
+  width: 100%;
+  max-width: 440px;
+
+  margin-top: 45px;
+
+  padding: 0;
+
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+
+.resident-about p {
+  margin: 0 0 22px 0;
+}
+
+
+/* RIGHT SIDE PHOTO */
 
 .resident-photo {
-  grid-column: 2;
-  grid-row: 2 / 4;
-
   width: 100%;
   max-width: 520px;
 
   aspect-ratio: 9 / 16;
-  height: auto;
 
-  margin: 0;
   justify-self: end;
+
+  /*
+    This lines the image up approximately
+    with the top of JAMES rather than
+    RESIDENT 001.
+  */
+  margin-top: 48px;
 
   overflow: hidden;
 }
+
 
 .resident-photo img {
   display: block;
@@ -813,14 +885,122 @@ a.resident-row:hover {
   object-position: top center;
 }
 
-  .resident-about {
-    padding: 50px 0;
+
+/* BROADCASTS */
+
+.resident-shows {
+  width: 100%;
+
+  margin-top: 70px;
+  padding-top: 30px;
+
+  border-top: 1px solid var(--white);
+}
+
+
+.resident-show {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px;
+  gap: 20px;
+
+  padding: 25px 0;
+
+  color: var(--white);
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--grey);
+
+  text-transform: uppercase;
+}
+
+
+.resident-show:link,
+.resident-show:visited,
+.resident-show:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
+
+.resident-show:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* ==================================================
+   RESIDENT PROFILE — MOBILE
+   ================================================== */
+
+@media (max-width: 700px) {
+
+  .resident-profile {
+    padding: 32px 16px;
   }
+
+
+  .resident-hero {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  .resident-intro {
+    width: 100%;
+  }
+
+
+  .resident-profile h1 {
+    font-size: 4rem;
+  }
+
+
+  .resident-location {
+    margin-top: 20px;
+  }
+
+
+  .resident-about {
+    max-width: 100%;
+
+    margin-top: 30px;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+
+  .resident-photo {
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    margin-top: 0;
+
+    justify-self: auto;
+  }
+
+
+  .resident-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: top center;
+  }
+
+
+  .resident-shows {
+    margin-top: 50px;
+  }
+
 
   .resident-show {
     grid-template-columns: 80px 1fr;
-    gap: 15px;
   }
+
 
   .resident-show span:last-child {
     display: none;
