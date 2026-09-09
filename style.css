@@ -1067,3 +1067,58 @@ body,
   color: #f2f2f2;
   text-decoration: none;
 }
+
+  /* RESIDENT PROFILE HERO */
+
+.resident-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+  min-height: 75vh;
+}
+
+.resident-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.resident-photo {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.resident-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ABOUT */
+
+.resident-about {
+  max-width: 900px;
+
+  padding: 70px 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.resident-about p {
+  margin: 0 0 18px 0;
+}
+
+
+/* DIVIDING LINE BEFORE BROADCASTS */
+
+.resident-shows {
+  border-top: 1px solid #f2f2f2;
+
+  padding-top: 30px;
+  margin-top: 20px;
+}
