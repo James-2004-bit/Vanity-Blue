@@ -213,3 +213,81 @@ h1 {
   top: 32px;
   right: 32px;
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: start;
+  gap: 30px;
+
+  padding: 20px 32px;
+
+  background: #0d0d0d;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.site-name {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.site-menu {
+  position: relative;
+}
+
+.site-menu summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.site-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+
+  width: 260px;
+
+  background: #0d0d0d;
+  border: 1px solid #f2f2f2;
+}
+
+.dropdown a {
+  display: block;
+
+  padding: 18px;
+
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+  border-bottom: 1px solid #444;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
