@@ -628,3 +628,108 @@ body,
   font-weight: 700;
   gap: 36px;
 }
+
+
+/* RESTORE LATEST BROADCAST LAYOUT */
+
+.latest {
+  padding: 32px;
+  background: #0d0d0d;
+  color: #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.show-artwork {
+  aspect-ratio: 1 / 1;
+
+  background: #f2f2f2;
+  color: #0d0d0d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.show-number {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.show-info h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin: 0 0 36px 0;
+}
+
+.show-description {
+  max-width: 460px;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: 28px;
+}
+
+.show-meta {
+  display: flex;
+  gap: 36px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+.mixcloud-player {
+  width: 100%;
+  margin-top: 0;
+}
+
+.mixcloud-player iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .latest {
+    padding: 20px;
+  }
+
+  .latest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .show-info h2 {
+    font-size: 3rem;
+  }
+
+.show-meta {
+  display: flex;
+  gap: 36px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
