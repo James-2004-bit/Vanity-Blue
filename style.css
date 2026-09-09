@@ -1145,3 +1145,19 @@ body,
   }
 
 }
+
+  /* RESIDENT LINKS — ALWAYS WHITE, NEVER UNDERLINED */
+
+a.resident-row,
+a.resident-row:link,
+a.resident-row:visited,
+a.resident-row:hover,
+a.resident-row:active {
+  color: #f2f2f2 !important;
+  text-decoration: none !important;
+}
+
+a.resident-row span {
+  color: inherit !important;
+  text-decoration: none !important;
+}
