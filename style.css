@@ -507,3 +507,17 @@ html {
   }
 
 }
+
+/* FRONT PAGE ONLY */
+
+.hero {
+  background: #ffffff;
+}
+
+.hero .tagline {
+  color: #0d0d0d;
+}
+
+.hero-meta {
+  color: #0d0d0d;
+}
