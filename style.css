@@ -521,3 +521,51 @@ html {
 .hero-meta {
   color: #0d0d0d;
 }
+
+body,
+.hero,
+.latest,
+.recent,
+.residents,
+.about,
+.submit {
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+.hero {
+  min-height: calc(100vh - 62px);
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.hero-title {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: #f2f2f2;
+
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+}
+
+.hero .tagline {
+  margin-top: 24px;
+  color: #f2f2f2;
+}
+
+.hero-meta {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2;
+}
