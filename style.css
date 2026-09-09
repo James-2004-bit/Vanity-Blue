@@ -1161,3 +1161,152 @@ a.resident-row span {
   color: inherit !important;
   text-decoration: none !important;
 }
+
+/* =========================
+   RESIDENT PAGE LAYOUT
+   ========================= */
+
+.resident-hero {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  width: 100%;
+  min-height: 75vh;
+
+  align-items: start;
+}
+
+
+/* LEFT SIDE */
+
+.resident-intro {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resident-number {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.resident-profile h1 {
+  margin: 0;
+
+  font-size: clamp(5rem, 12vw, 12rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+.resident-location {
+  margin-top: 30px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+/* RIGHT SIDE IMAGE */
+
+.resident-photo {
+  grid-column: 2;
+  grid-row: 1;
+
+  width: 100%;
+  height: 75vh;
+
+  overflow: hidden;
+
+  /* Moves image down so it lines up
+     with the top of JAMES FISH */
+  margin-top: 78px;
+}
+
+.resident-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+
+/* BIOGRAPHY */
+
+.resident-about {
+  max-width: 900px;
+
+  padding: 70px 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.resident-about p {
+  margin: 0 0 18px 0;
+}
+
+
+/* BROADCASTS DIVIDING LINE */
+
+.resident-shows {
+  border-top: 1px solid #f2f2f2;
+
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+  .resident-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    min-height: auto;
+  }
+
+  .resident-intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .resident-profile h1 {
+    font-size: 4rem;
+  }
+
+  .resident-photo {
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 0;
+  }
+
+  .resident-photo img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  .resident-about {
+    padding: 50px 0;
+  }
+
+}
