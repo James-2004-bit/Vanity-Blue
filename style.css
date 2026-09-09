@@ -869,7 +869,7 @@ a.resident-row:hover {
     Pulls the image upward towards
     the white header line.
   */
-  margin-top: -48px;
+  margin-top: -35px;
 
   overflow: hidden;
 }
