@@ -1,0 +1,25 @@
+<svg
+  viewBox="0 0 100 100"
+  width="40"
+  height="40"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    width="100"
+    height="100"
+    fill="#0E1F4D"
+  />
+
+  <text
+    x="6"
+    y="78"
+    font-family="Space Grotesk, sans-serif"
+    font-weight="700"
+    font-size="68"
+    fill="#F0EDE6"
+    letter-spacing="-2"
+  >
+    VB
+  </text>
+</svg>
+  
