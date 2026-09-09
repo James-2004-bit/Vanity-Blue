@@ -733,3 +733,32 @@ body,
 
   margin-bottom: 28px;
 }
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.show-number {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.show-info h2 {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.show-description {
+  margin-bottom: 30px;
+}
+
+.show-meta {
+  margin-bottom: 30px;
+}
+
+.mixcloud-player {
+  margin-top: auto;
+}
