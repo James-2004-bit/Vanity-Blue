@@ -124,3 +124,44 @@ h1 {
   }
 
 }
+
+.recent {
+  padding: 32px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.broadcast-list {
+  border-top: 1px solid #f2f2f2;
+}
+
+.broadcast-row {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 100px;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #444;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.broadcast-row:hover {
+  background: #f2f2f2;
+  color: #0d0d0d;
+}
+
+@media (max-width: 700px) {
+
+  .recent {
+    padding: 20px;
+  }
+
+  .broadcast-row {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .broadcast-row span:nth-child(3),
+  .broadcast-row span:nth-child(4) {
+    display: none;
+  }
+
+}
