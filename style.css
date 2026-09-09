@@ -208,5 +208,8 @@ h1 {
 .logo {
   width: 70px;
   height: 70px;
-  margin-bottom: 30px;
+
+    position: absolute;
+  top: 32px;
+  right: 32px;
 }
