@@ -220,11 +220,10 @@ h1 {
   z-index: 1000;
 
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: start;
-  gap: 30px;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 
-  padding: 20px 32px;
+  padding: 18px 24px;
 
   background: #0d0d0d;
   border-bottom: 1px solid #f2f2f2;
@@ -234,58 +233,40 @@ h1 {
   color: #f2f2f2;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+
+  display: flex;
+  align-items: center;
 }
 
-.site-menu {
-  position: relative;
+.site-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
-.site-menu summary {
-  cursor: pointer;
-  list-style: none;
-  font-size: 0.9rem;
-}
-
-.site-menu summary::-webkit-details-marker {
-  display: none;
-}
-
-.dropdown {
-  position: absolute;
-  top: 35px;
-  right: 0;
-
-  width: 260px;
-
-  background: #0d0d0d;
-  border: 1px solid #f2f2f2;
-}
-
-.dropdown a {
-  display: block;
-
-  padding: 18px;
-
+.site-nav a {
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 0.8rem;
-
-  border-bottom: 1px solid #444;
+  font-size: 0.75rem;
 }
 
-.dropdown a:last-child {
-  border-bottom: none;
-}
-
-.dropdown a:hover {
-  background: #f2f2f2;
-  color: #0d0d0d;
+.site-nav a:hover {
+  text-decoration: underline;
 }
 
 .header-logo {
   width: 40px;
   height: 40px;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html {
@@ -324,4 +305,9 @@ html {
     margin-bottom: 40px;
   }
 
+}
+
+.site-header {
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
 }
