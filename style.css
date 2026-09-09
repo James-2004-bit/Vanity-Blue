@@ -32,3 +32,95 @@ h1 {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
+
+.latest {
+  padding: 32px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  margin-bottom: 40px;
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.show-artwork {
+  aspect-ratio: 1 / 1;
+  background: #f2f2f2;
+  color: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  letter-spacing: -0.05em;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.show-number {
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+
+.show-info h2 {
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  margin: 0 0 30px 0;
+}
+
+.show-description {
+  max-width: 450px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.show-meta {
+  display: flex;
+  gap: 30px;
+  font-size: 0.7rem;
+  margin-bottom: 30px;
+}
+
+.listen-button {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 18px 0;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .latest {
+    padding: 20px;
+  }
+
+  .latest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .show-info h2 {
+    font-size: 3rem;
+  }
+
+  .show-meta {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+}
