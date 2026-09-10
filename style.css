@@ -1015,3 +1015,42 @@ a.resident-row:hover {
   }
 
 }
+
+/* ==================================================
+   ABOUT PAGE
+   ================================================== */
+
+.about-page {
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+    padding: 48px 32px 80px;
+}
+
+.about-page-title {
+    margin: 0;
+
+    font-size: clamp(6rem, 15vw, 14rem);
+    line-height: 0.82;
+    letter-spacing: -0.07em;
+    font-weight: 700;
+
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+
+.about-page-content {
+    max-width: 900px;
+    margin-top: 60px;
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                 "Liberation Mono", "Courier New", monospace;
+
+    font-size: clamp(1.2rem, 1.5vw, 1.55rem);
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+}
+
+.about-page-content p {
+    margin: 0 0 35px;
+}
