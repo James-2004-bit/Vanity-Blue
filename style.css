@@ -99,6 +99,14 @@ img {
   object-fit: contain;
 }
 
+.site-logo,
+.site-logo:visited,
+.site-logo:hover,
+.site-logo:active {
+  color: var(--white);
+  text-decoration: none;
+}
+
 
 /* ==================================================
    3. HOMEPAGE HERO
