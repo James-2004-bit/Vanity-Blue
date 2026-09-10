@@ -872,21 +872,26 @@ a.resident-row:hover {
     margin-top: 24px;
     margin-bottom: 24px;
 
-    /* moves the whole image slightly left */
+    /* pulls image slightly left */
     margin-right: 30px;
 
-    overflow: visible;
+    /* controls where the bottom of the image stops */
+    height: calc(100vh - 126px);
+
+    /* crops anything that goes past the bottom */
+    overflow: hidden;
 }
 
 .resident-photo img {
-  display: block;
+    display: block;
+    width: 100%;
+    height: 100%;
 
-  width: 100%;
-  height: auto;
+    /* fills the box and crops only what doesn't fit */
+    object-fit: cover;
 
-  /* never crop the actual image */
-  object-fit: contain;
-  object-position: top center;
+    /* keeps the TOP of the original photo visible */
+    object-position: top center;
 }
 
 /* BROADCASTS */
