@@ -861,15 +861,18 @@ a.resident-row:hover {
    ========================= */
 
 .resident-photo {
-  width: 100%;
-  max-width: 520px;
+    width: 100%;
+    max-width: 520px;
+    justify-self: end;
 
-  justify-self: end;
+    /* equal space above and below */
+    margin-top: 24px;
+    margin-bottom: 24px;
 
-  /* pulls image up to the white header line */
-  margin-top: -48px;
+    /* moves the whole image slightly left */
+    margin-right: 30px;
 
-  overflow: visible;
+    overflow: visible;
 }
 
 .resident-photo img {
